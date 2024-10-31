@@ -21,6 +21,7 @@ class WriteBookChapterCrew:
             config=self.agents_config["researcher"],
             tools=[search_tool],
             llm=self.llm,
+            verbose=True,
         )
 
     @agent
@@ -28,6 +29,7 @@ class WriteBookChapterCrew:
         return Agent(
             config=self.agents_config["writer"],
             llm=self.llm,
+            verbose=True,
         )
 
     @task
