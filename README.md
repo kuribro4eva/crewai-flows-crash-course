@@ -4,9 +4,9 @@ This project requires certain dependencies to be installed for proper functionin
 
 ## Conda Environment
 
-To create a conda environment with Python 3.10, use the following command:
+To create a conda environment with Python 3.12, use the following command:
 
-conda create --name crewai-flows python=3.10
+conda create --name crewai-flows python=3.12
 
 To activate the conda environment, use:
 
@@ -18,9 +18,9 @@ If you prefer using virtualenv, first install it:
 
 pip install virtualenv
 
-Then create a virtual environment with Python 3.10:
+Then create a virtual environment with Python 3.12:
 
-virtualenv -p python3.10 myenv
+virtualenv -p python3.12 myenv
 
 Activate the virtualenv environment with:
 
