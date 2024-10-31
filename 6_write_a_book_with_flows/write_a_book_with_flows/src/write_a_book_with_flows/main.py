@@ -15,7 +15,7 @@ from .crews.outline_book_crew.outline_crew import OutlineCrew
 
 class BookState(BaseModel):
     title: str = (
-        "The Current State of AI in September 2024: Trends Across Industries and What's Next"
+        "The Current State of AI in September 2024 - Trends Across Industries"
     )
     book: List[Chapter] = []
     book_outline: List[ChapterOutline] = []
