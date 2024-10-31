@@ -51,7 +51,7 @@ class BookFlow(Flow[BookState]):
         print("Writing Book Chapters")
         tasks = []
 
-        def write_single_chapter(chapter_outline):
+        async def write_single_chapter(chapter_outline):
             output = (
                 WriteBookChapterCrew()
                 .crew()
