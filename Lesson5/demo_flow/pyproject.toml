@@ -5,15 +5,12 @@ description = "demo-flow using crewAI"
 authors = [{ name = "Your Name", email = "you@example.com" }]
 requires-python = ">=3.10,<=3.13"
 dependencies = [
-    "crewai[tools]>=0.75.1,<1.0.0",
-    "graphviz>=0.20.1",
-    "networkx>=3.2.1",
-    "matplotlib>=3.8.2"
+    "crewai[tools]>=0.76.2,<1.0.0",
 ]
 
 [project.scripts]
 kickoff = "demo_flow.main:kickoff"
-plot_flow = "demo_flow.main:plot"
+plot = "demo_flow.main:plot"
 
 [build-system]
 requires = ["hatchling"]
