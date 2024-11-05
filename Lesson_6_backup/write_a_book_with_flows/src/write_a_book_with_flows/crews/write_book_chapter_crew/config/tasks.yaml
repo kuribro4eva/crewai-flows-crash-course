@@ -1,0 +1,44 @@
+research_chapter:
+  description: >
+    Conduct detailed research for this chapter using the provided PDF sources.
+    Focus on extracting specific information, examples, and evidence that align with
+    the chapter's scope and purpose.
+
+    Here is the book's goal:\n\n {goal}
+    Here is the chapter's description:\n\n {chapter_description}
+
+    Research Guidelines:
+    - Focus exclusively on content from the provided PDF sources
+    - Extract relevant quotes, examples, and supporting evidence
+    - Identify content that directly supports the chapter's themes
+    - Gather sufficient material for a 3,000-word chapter
+    - Ensure research aligns with the broader book structure
+
+    Book Context:
+    Here is the complete book outline for reference:\n\n {book_outline}
+  expected_output: >
+    A comprehensive collection of relevant content, quotes, and examples from the
+    source materials that will support writing this chapter.
+  agent: researcher
+
+write_chapter:
+  description: >
+    Transform the researched content into a polished, engaging chapter suitable for publication.
+    Your task is to take the research and craft it into a cohesive narrative that flows well
+    and engages the reader.
+    
+    Writing Guidelines:
+    - Transform research into engaging prose that flows naturally
+    - Use clear transitions between sections
+    - Maintain an authoritative but accessible tone
+    - Include relevant examples but integrate them smoothly
+    - Write approximately 3,000 words
+    - Ensure the writing is publication-ready, not just research notes
+
+    Chapter Parameters:
+    - Title: {chapter_title}
+    - Description: {chapter_description}
+  expected_output: >
+    A JSON object with title and content fields
+  agent: writer
+  output_format: json

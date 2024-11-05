@@ -1,0 +1,35 @@
+research_topic:
+  description: >
+    Analyze the provided PDF source materials to identify key themes, core concepts,
+    and structural elements that will inform our book's organization.
+
+    Here is the book's goal:\n\n {goal}
+
+    Research Guidelines:
+    - Focus exclusively on content from the provided PDF sources
+    - Identify major themes and conceptual relationships
+    - Note key ideas that require detailed explanation
+    - Consider how concepts build upon each other
+    - Provide specific examples and evidence from the sources
+  expected_output: >
+    A comprehensive analysis of the source materials' main themes and concepts,
+    with recommendations for logical organization.
+  agent: researcher
+
+generate_outline:
+  description: >
+    Using the comprehensive analysis from the researcher, create a detailed book outline 
+    that effectively organizes the source material's content into a coherent structure.
+
+    Requirements:
+    - You must have no more than 3 chapters
+    - Design chapters that can be covered in 3,000 words
+    - Ensure logical flow between chapters
+    - Provide clear scope for each chapter
+    - Avoid topic overlap between chapters
+
+    Here is the book's goal:\n\n {goal}
+  expected_output: >
+    A JSON object containing an array of chapters with titles and descriptions
+  agent: outliner
+  output_format: json
